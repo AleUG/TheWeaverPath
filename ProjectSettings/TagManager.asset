@@ -10,6 +10,7 @@ TagManager:
   - Pared
   - Door
   - Llave
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Techo
   - Paredes
   - Colgante
-  - 
-  - 
+  - Collider
+  - Player
   - 
   - 
   - 

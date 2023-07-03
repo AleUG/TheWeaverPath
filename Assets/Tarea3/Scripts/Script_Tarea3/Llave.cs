@@ -9,7 +9,7 @@ public class Llave : MonoBehaviour
     private float distanciaMinima = 0.8f; // Distancia mínima para abrir la puerta
 
     public Puerta puertaAsociada; // Referencia a la puerta que esta llave puede abrir
-    private float tiempoDestruccion = 0.1f; // Tiempo en segundos antes de destruir la puerta
+    private float tiempoDestruccion = 0.001f; // Tiempo en segundos antes de destruir la puerta
 
     public AudioSource sonidoLlave; // AudioSource para el sonido al agarrar la llave
 

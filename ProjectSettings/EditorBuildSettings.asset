@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tarea3/Scenes/Level_2.unity
     guid: 59553bce1e65e584d997bac6c2a82821
+  - enabled: 1
+    path: Assets/Tarea3/Scenes/Level_3.unity
+    guid: 7331209e0ba2e2c40b84e2502b647387
+  - enabled: 1
+    path: "Assets/Tarea3/Scenes/Men\xFAFinal.unity"
+    guid: 63e32f454d46e32498f6c5fe30c7a295
   m_configObjects: {}

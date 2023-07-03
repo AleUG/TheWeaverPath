@@ -151,6 +151,7 @@ MonoBehaviour:
   contadorText: {fileID: 0}
   sonidoRecoleccion: {fileID: 8300000, guid: a0a55b8c95af51a4ebe926886cce249e, type: 3}
   audioSource: {fileID: 0}
+  scoreAsignado: 150
 --- !u!95 &6424795203624089556
 Animator:
   serializedVersion: 5

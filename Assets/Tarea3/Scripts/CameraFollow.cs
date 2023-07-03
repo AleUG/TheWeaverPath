@@ -1,71 +1,53 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-[AddComponentMenu("Playground/Movement/Camera Follow")]
 public class CameraFollow : MonoBehaviour
 {
-	[Header("Object to follow")]
-	// This is the object that the camera will follow
-	public Transform target;
+    public Transform target;
+    public float smoothSpeed = 0.125f;
+    public Vector3 offset;
+    public float lookaheadDistance = 2f;
+    public float minXLimit = -10f;
+    public float maxXLimit = 10f;
+    public bool enableVerticalMovement = true;
 
-    //Bound camera to limits
-    public bool limitBounds = true;
-    public float left = -5f;
-    public float right = 5f;
-    public float bottom = -5f;
-    public float top = 5f;
+    private Vector3 desiredPosition;
 
-	private Vector3 lerpedPosition;
+    private void LateUpdate()
+    {
+        if (target == null)
+            return;
 
-    private Camera _camera;
+        // Calcular la posición deseada de la cámara
+        desiredPosition = target.position + offset;
 
-    private void Awake() {
-        _camera = GetComponent<Camera>();
+        // Calcular la dirección del jugador
+        float direction = Mathf.Sign(target.localScale.x);
+
+        // Si el jugador mira hacia la derecha, ajustar la posición deseada hacia adelante
+        if (direction > 0)
+            desiredPosition += Vector3.right * lookaheadDistance;
+
+        // Si el jugador mira hacia la izquierda, ajustar la posición deseada hacia adelante
+        if (direction < 0)
+            desiredPosition += Vector3.left * lookaheadDistance;
+
+        // Aplicar límites a la posición deseada de la cámara
+        desiredPosition.x = Mathf.Clamp(desiredPosition.x, minXLimit, maxXLimit);
+
+        // Aplicar movimiento en el eje Y solo si está habilitado
+        if (!enableVerticalMovement)
+            desiredPosition.y = transform.position.y;
+
+        // Suavizar el movimiento de la cámara hacia la posición deseada
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = smoothedPosition;
     }
 
-    // FixedUpdate is called every frame, when the physics are calculated
-    void FixedUpdate()
-	{
-		if(target != null)
-		{
-			// Find the right position between the camera and the object
-			lerpedPosition = Vector3.Lerp(transform.position, target.position, Time.deltaTime * 10f);
-			lerpedPosition.z = -10f;
-		}
-	}
-
-
-
-	// LateUpdate is called after all other objects have moved
-	void LateUpdate ()
-	{
-		if(target != null)
-		{
-			// Move the camera in the position found previously
-			transform.position = lerpedPosition;
-
-            // Bounds the camera to the limits (if enabled)
-            if(limitBounds) {
-                Vector3 bottomLeft = _camera.ScreenToWorldPoint(Vector3.zero);
-                Vector3 topRight = _camera.ScreenToWorldPoint(new Vector3(_camera.pixelWidth, _camera.pixelHeight));
-                Vector2 screenSize = new Vector2(topRight.x - bottomLeft.x, topRight.y - bottomLeft.y);
-
-                Vector3 boundPosition = transform.position;
-                if (boundPosition.x > right - (screenSize.x / 2f)) {
-                    boundPosition.x = right - (screenSize.x / 2f);
-                }
-                if (boundPosition.x < left + (screenSize.x / 2f)) {
-                    boundPosition.x = left + (screenSize.x / 2f);
-                }
-
-                if (boundPosition.y > top - (screenSize.y / 2f)) {
-                    boundPosition.y = top - (screenSize.y / 2f);
-                }
-                if (boundPosition.y < bottom + (screenSize.y / 2f)) {
-                    boundPosition.y = bottom + (screenSize.y / 2f);
-                }
-                transform.position = boundPosition;
-            }
-		}
-	}
+    private void OnDrawGizmosSelected()
+    {
+        // Dibujar líneas de visualización para los límites en el editor
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(new Vector3(minXLimit, transform.position.y, transform.position.z), new Vector3(minXLimit, transform.position.y + 5f, transform.position.z));
+        Gizmos.DrawLine(new Vector3(maxXLimit, transform.position.y, transform.position.z), new Vector3(maxXLimit, transform.position.y + 5f, transform.position.z));
+    }
 }

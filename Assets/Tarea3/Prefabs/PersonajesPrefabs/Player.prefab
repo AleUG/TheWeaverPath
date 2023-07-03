@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 4903676952866052859}
   - component: {fileID: 5621470136077754390}
   - component: {fileID: 1888117132008734922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -323,12 +323,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f5233cc3384d742a5b4d6dd655ae91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaxima: 10
-  vidaActual: 10
+  vidaMaxima: 5
+  vidaActual: 5
   gameOverCanvas: {fileID: 0}
   healthBarImage: {fileID: 0}
   gameplayMusicSource: {fileID: 0}
   gameOverMusicSource: {fileID: 0}
+  damageAudioSource: {fileID: 0}
+  reboteForce: 12
+  invulnerabilityDuration: 1
+  blinkInterval: 0.1
 --- !u!114 &654763419017554428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec47251be895d14daff7afcb4bd6d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpointKey: 99
+  respawnButton: {fileID: 0}
 --- !u!232 &5311815008174166760
 DistanceJoint2D:
   m_ObjectHideFlags: 0

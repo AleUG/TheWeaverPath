@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3347157438617881897}
   - component: {fileID: 6566412188354210617}
   - component: {fileID: 2523592865534270291}
+  - component: {fileID: 8597893927803371361}
   m_Layer: 0
   m_Name: Llave
   m_TagString: Llave
@@ -131,6 +132,17 @@ MonoBehaviour:
   llaveAgarrada: 0
   puertaAsociada: {fileID: 0}
   sonidoLlave: {fileID: 1690682472730231087}
+--- !u!210 &8597893927803371361
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3301716349900015811}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
 --- !u!1 &8710847974703306534
 GameObject:
   m_ObjectHideFlags: 0

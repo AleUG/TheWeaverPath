@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour
     public Transform player; // el objeto jugador
     public float speed = 2f; // velocidad de movimiento del enemigo
     public float maxDistance = 5f; // distancia máxima a la que el enemigo seguirá al jugador
+    public int daño = 1; // Cantidad de daño que la sierra inflige al jugador
 
     private float distanceToPlayer; // distancia entre el enemigo y el jugador
 
@@ -48,24 +49,44 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        // Detecta el movimiento horizontal
-        if (transform.position.x > previousPosition.x)
-        {
-            // El objeto se está moviendo hacia la derecha
-            animator.SetBool("Horizontal", true);
-        }
-        else if (transform.position.x < previousPosition.x)
-        {
-            // El objeto se está moviendo hacia la izquierda
-            animator.SetBool("Horizontal", true);
-        }
         else
         {
-            // El objeto no se está moviendo en horizontal
-            animator.SetBool("Horizontal", false);
+            player = null;
         }
+
+        //// Detecta el movimiento horizontal
+        //if (transform.position.x > previousPosition.x)
+        //{
+            // El objeto se está moviendo hacia la derecha
+        //    animator.SetBool("Horizontal", true);
+        //}
+        //else if (transform.position.x < previousPosition.x)
+        //{
+            // El objeto se está moviendo hacia la izquierda
+        //    animator.SetBool("Horizontal", true);
+        //}
+        //else
+        //{
+            // El objeto no se está moviendo en horizontal
+        //    animator.SetBool("Horizontal", false);
+        //}
 
         // Actualiza la posición anterior del objeto
         previousPosition = transform.position;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        // Si entra en contacto con el jugador
+        if (collision.CompareTag("Player"))
+        {
+            // Obtener el componente PlayerVida del jugador
+            PlayerVida playerVida = collision.GetComponent<PlayerVida>();
+            if (playerVida != null)
+            {
+                // Infligir daño al jugador
+                playerVida.RecibirDaño(daño);
+            }
+        }
     }
 }

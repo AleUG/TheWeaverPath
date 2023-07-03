@@ -1,57 +1,100 @@
 using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class StaticCamera : MonoBehaviour
 {
     public Transform player;
-    public Camera[] cameras;
-    public float cameraSwitchDelay = 0.5f;
+    public List<Camera> playerCameras;
+    public float activationDistance = 5f;
 
-    private int currentCameraIndex = 0;
+    private Camera currentCamera;
     private bool isSwitchingCamera = false;
 
     void Start()
     {
-        EnableCamera(currentCameraIndex);
+        // Desactivar todas las cámaras al inicio
+        foreach (Camera camera in playerCameras)
+        {
+            camera.gameObject.SetActive(false);
+        }
+
+        // Obtener la cámara más cercana al jugador al inicio
+        currentCamera = GetClosestCamera();
+        if (currentCamera != null)
+        {
+            currentCamera.gameObject.SetActive(true);
+        }
     }
 
     void Update()
     {
-        if (!isSwitchingCamera && !IsPlayerInView(cameras[currentCameraIndex]))
+        if (!isSwitchingCamera && ShouldSwitchCamera())
         {
             SwitchCamera();
         }
     }
 
-    bool IsPlayerInView(Camera camera)
+    bool ShouldSwitchCamera()
     {
-        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(camera);
-        return GeometryUtility.TestPlanesAABB(planes, player.GetComponent<Collider2D>().bounds);
+        if (currentCamera == null)
+        {
+            // No hay cámara activa actualmente
+            return true;
+        }
+
+        float distanceToCurrentCamera = GetDistanceToCamera(currentCamera);
+        return distanceToCurrentCamera > activationDistance;
     }
 
     void SwitchCamera()
     {
-        int nextCameraIndex = (currentCameraIndex + 1) % cameras.Length;
-        StartCoroutine(SwitchCameraDelayed(nextCameraIndex));
+        Camera nextCamera = GetClosestCamera();
+        if (nextCamera != null && nextCamera != currentCamera)
+        {
+            // Desactivar la cámara actual
+            currentCamera.gameObject.SetActive(false);
+
+            // Activar la siguiente cámara
+            nextCamera.gameObject.SetActive(true);
+
+            // Actualizar la referencia a la cámara actual
+            currentCamera = nextCamera;
+        }
     }
 
-    System.Collections.IEnumerator SwitchCameraDelayed(int nextCameraIndex)
+    float GetDistanceToCamera(Camera camera)
     {
-        isSwitchingCamera = true;
-        DisableCamera(currentCameraIndex);
-        yield return new WaitForSeconds(cameraSwitchDelay);
-        EnableCamera(nextCameraIndex);
-        currentCameraIndex = nextCameraIndex;
-        isSwitchingCamera = false;
+        Vector3 cameraForward = camera.transform.forward;
+        Vector3 playerToCamera = camera.transform.position - player.position;
+
+        // Proyectar el vector playerToCamera en la dirección de la cámara
+        float distance = Vector3.Dot(playerToCamera, cameraForward);
+
+        // Si la distancia proyectada es negativa, el jugador está detrás de la cámara
+        // En ese caso, la distancia a la cámara es la distancia euclidiana entre el jugador y la cámara
+        if (distance < 0f)
+        {
+            distance = playerToCamera.magnitude;
+        }
+
+        return distance;
     }
 
-    void EnableCamera(int index)
+    Camera GetClosestCamera()
     {
-        cameras[index].gameObject.SetActive(true);
-    }
+        Camera closestCamera = null;
+        float closestDistance = float.MaxValue;
 
-    void DisableCamera(int index)
-    {
-        cameras[index].gameObject.SetActive(false);
+        foreach (Camera camera in playerCameras)
+        {
+            float distanceToCamera = GetDistanceToCamera(camera);
+            if (distanceToCamera < closestDistance)
+            {
+                closestCamera = camera;
+                closestDistance = distanceToCamera;
+            }
+        }
+
+        return closestCamera;
     }
 }

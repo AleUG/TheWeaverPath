@@ -11,19 +11,28 @@ public class PlayerVida : MonoBehaviour
 
     public AudioSource gameplayMusicSource; // Referencia al AudioSource de la música del gameplay
     public AudioSource gameOverMusicSource; // Referencia al AudioSource de la música del Game Over
+    public AudioSource damageAudioSource; // Referencia al AudioSource para reproducir el sonido de daño
 
     private float gameOverMusicVolume = 0.5f; // Volumen de la música especial para el Game Over
 
     private bool invulnerable = false;
+    private bool isTakingDamage = false; // Indica si el jugador está recibiendo daño actualmente
+    private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
+    public float reboteForce = 10f;
+    public float invulnerabilityDuration = 2f;
+    public float blinkInterval = 0.2f;
 
     private void Start()
     {
         vidaActual = vidaMaxima; // Establece la vida actual al valor máximo al iniciar
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void RecibirDaño(int cantidad)
     {
-        if (invulnerable)
+        if (invulnerable || isTakingDamage)
         {
             return;
         }
@@ -37,18 +46,42 @@ public class PlayerVida : MonoBehaviour
             // Deshabilitar los controles del jugador (opcional)
             // Aquí puedes desactivar otros componentes relacionados con el jugador si es necesario
 
-            // Activar el canvas de Game Over
-            gameOverCanvas.SetActive(true);
+            // Reproducir el sonido de daño
+            if (damageAudioSource != null)
+            {
+                damageAudioSource.Play();
+            }
 
             // Detener la música del gameplay
             gameplayMusicSource.Stop();
 
+            gameOverCanvas.SetActive(true);
             // Reproducir la música especial para el Game Over
             gameOverMusicSource.volume = gameOverMusicVolume;
             gameOverMusicSource.Play();
 
-            // Destruir el objeto después de 0.1 segundos
-            Destroy(gameObject, 0.01f);
+            // Desactivar el objeto después de la duración del sonido de daño
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            // Rebote del jugador al recibir daño
+            rb.velocity = Vector2.zero;
+            rb.AddForce(Vector2.up * reboteForce, ForceMode2D.Impulse);
+
+            // Activar invulnerabilidad y el parpadeo del sprite
+            ActivarInvulnerabilidad();
+            InvokeRepeating("ToggleSpriteRenderer", 0f, blinkInterval);
+            Invoke("DesactivarInvulnerabilidad", invulnerabilityDuration);
+
+            // Reproducir el sonido de daño
+            if (damageAudioSource != null)
+            {
+                damageAudioSource.Play();
+            }
+
+            // Indicar que el jugador está recibiendo daño
+            isTakingDamage = true;
         }
     }
 
@@ -60,16 +93,14 @@ public class PlayerVida : MonoBehaviour
     public void DesactivarInvulnerabilidad()
     {
         invulnerable = false;
+        spriteRenderer.enabled = true;
+        CancelInvoke("ToggleSpriteRenderer");
+        isTakingDamage = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void ToggleSpriteRenderer()
     {
-        // Si colisiona con un objeto que tiene el script "AtaqueEnemy"
-        AtaqueEnemy ataqueEnemy = collision.gameObject.GetComponent<AtaqueEnemy>();
-        if (ataqueEnemy != null)
-        {
-            RecibirDaño(ataqueEnemy.daño);
-        }
+        spriteRenderer.enabled = !spriteRenderer.enabled;
     }
 
     public void Curar(int cantidad)
