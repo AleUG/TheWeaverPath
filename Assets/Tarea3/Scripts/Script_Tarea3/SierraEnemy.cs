@@ -11,14 +11,22 @@ public class SierraEnemy : MonoBehaviour
 
     private void Start()
     {
-        // Establecer el punto A como destino inicial si está asignado
-        if (pointA != null)
+        // Verificar si al menos uno de los puntos de destino está asignado
+        if (pointA != null || pointB != null)
         {
-            target = pointA;
+            // Establecer el punto A como destino inicial si está asignado
+            if (pointA != null)
+            {
+                target = pointA;
+            }
+            else
+            {
+                target = pointB;
+            }
         }
         else
         {
-            // Si no hay punto A asignado, detener el movimiento
+            // Si no hay puntos de destino asignados, detener el movimiento
             target = null;
         }
     }

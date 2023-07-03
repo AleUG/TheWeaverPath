@@ -113,6 +113,12 @@ public class PlayerVida : MonoBehaviour
         }
     }
 
+    public void SetVidaMaxima()
+    {
+        vidaActual = vidaMaxima;
+        // Lógica adicional, si es necesario
+    }
+
     public void Update()
     {
         healthBarImage.fillAmount = vidaActual / vidaMaxima;

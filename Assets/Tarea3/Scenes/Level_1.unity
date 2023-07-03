@@ -4108,6 +4108,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1328330184}
     m_Modifications:
     - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: playerVida
+      value: 
+      objectReference: {fileID: 1957154290}
+    - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912413291}
@@ -11638,6 +11642,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1328330184}
     m_Modifications:
     - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: playerVida
+      value: 
+      objectReference: {fileID: 1957154290}
+    - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912413291}
@@ -13636,7 +13644,7 @@ MonoBehaviour:
   target: {fileID: 1818943132}
   smoothSpeed: 0.04
   offset: {x: 0, y: 0, z: -1}
-  lookaheadDistance: 2
+  lookaheadDistance: 2.5
   minXLimit: 257.8
   maxXLimit: 280
   enableVerticalMovement: 0
@@ -17709,7 +17717,7 @@ MonoBehaviour:
   target: {fileID: 1818943132}
   smoothSpeed: 0.04
   offset: {x: 0, y: 0, z: -1}
-  lookaheadDistance: 2
+  lookaheadDistance: 2.5
   minXLimit: 121
   maxXLimit: 168.5
   enableVerticalMovement: 0
@@ -23643,7 +23651,7 @@ Tilemap:
       - {fileID: 194466423, guid: dbb41c70678527848979ced01720e688, type: 3}
       - {fileID: -759818452, guid: dbb41c70678527848979ced01720e688, type: 3}
       - {fileID: -2040721471, guid: dbb41c70678527848979ced01720e688, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 51, y: -12, z: 0}
@@ -23799,7 +23807,7 @@ Tilemap:
       - {fileID: 194466423, guid: dbb41c70678527848979ced01720e688, type: 3}
       - {fileID: -759818452, guid: dbb41c70678527848979ced01720e688, type: 3}
       - {fileID: -2040721471, guid: dbb41c70678527848979ced01720e688, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -6, y: -2, z: 0}
@@ -24940,11 +24948,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 416822355934281731, guid: 7fbe482466b91d941846abac60281ac6, type: 3}
   m_PrefabInstance: {fileID: 1691308089}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1299643409 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 668612217161921218, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-  m_PrefabInstance: {fileID: 1391321989}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1301861425
 GameObject:
   m_ObjectHideFlags: 0
@@ -25948,10 +25951,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1568711500}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 1299643409}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 896601868}
@@ -25963,158 +25962,6 @@ PrefabInstance:
       propertyPath: teclaContinue
       value: 
       objectReference: {fileID: 1142807044}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueLines.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueLines.Array.data[0]
-      value: It seems that you can't continue your path
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueLines.Array.data[1]
-      value: You should be careful walking around these places.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueLines.Array.data[2]
-      value: The acid that falls here is quite dangerous.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueLines.Array.data[3]
-      value: Take this.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueLines.Array.data[4]
-      value: Take this.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.data[0].lines.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.data[1].lines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.data[0].lines.Array.data[0]
-      value: It seems that you can't continue your path.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.data[0].lines.Array.data[1]
-      value: Yo should be careful walking in this areas.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.data[0].lines.Array.data[2]
-      value: The acid that falls here is quite dangerous.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.data[0].lines.Array.data[3]
-      value: Take this.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.data[1].lines.Array.data[0]
-      value: What do you want now?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueData.Array.data[1].lines.Array.data[1]
-      value: If you want die just continue
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[3].dialogueLines.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[4].dialogueLines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[0]
-      value: It seems that you can't continue your path.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[1]
-      value: You should be careful walking around these areas.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[2]
-      value: The acid that falls here is quite dangerous.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[3]
-      value: Take this.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.data[0]
-      value: Scape or die.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.data[1]
-      value: Choose you destiny.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.data[0]
-      value: Now what?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.data[1]
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[3].dialogueLines.Array.data[0]
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[3].dialogueLines.Array.data[1]
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[4].dialogueLines.Array.data[0]
-      value: Now what?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: dialogueGroups.Array.data[4].dialogueLines.Array.data[1]
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 5945197710349091906, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: m_Size.x
-      value: 1.9151046
-      objectReference: {fileID: 0}
-    - target: {fileID: 5945197710349091906, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: m_Size.y
-      value: 2.176486
-      objectReference: {fileID: 0}
-    - target: {fileID: 5945197710349091906, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.020499706
-      objectReference: {fileID: 0}
-    - target: {fileID: 5945197710349091906, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.58824325
-      objectReference: {fileID: 0}
-    - target: {fileID: 6562231479075549728, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7198826847648698221, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: m_Name
       value: NPC
@@ -54328,6 +54175,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1328330184}
     m_Modifications:
     - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: playerVida
+      value: 
+      objectReference: {fileID: 1957154290}
+    - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912413291}
@@ -57730,6 +57581,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+--- !u!114 &1957154290 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6746275340581188966, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+  m_PrefabInstance: {fileID: 1957154289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f5233cc3384d742a5b4d6dd655ae91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1960366715
 GameObject:
   m_ObjectHideFlags: 0

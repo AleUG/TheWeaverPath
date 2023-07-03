@@ -26,6 +26,12 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        if (player == null)
+        {
+            // Si no se asigna el jugador al enemigo, se ignora
+            return;
+        }
+
         // calcular la distancia entre el enemigo y el jugador
         distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
@@ -49,25 +55,20 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        else
-        {
-            player = null;
-        }
-
         //// Detecta el movimiento horizontal
         //if (transform.position.x > previousPosition.x)
         //{
-            // El objeto se está moviendo hacia la derecha
+        // El objeto se está moviendo hacia la derecha
         //    animator.SetBool("Horizontal", true);
         //}
         //else if (transform.position.x < previousPosition.x)
         //{
-            // El objeto se está moviendo hacia la izquierda
+        // El objeto se está moviendo hacia la izquierda
         //    animator.SetBool("Horizontal", true);
         //}
         //else
         //{
-            // El objeto no se está moviendo en horizontal
+        // El objeto no se está moviendo en horizontal
         //    animator.SetBool("Horizontal", false);
         //}
 

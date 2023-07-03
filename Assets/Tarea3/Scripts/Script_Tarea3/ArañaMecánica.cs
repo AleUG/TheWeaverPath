@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class ArañaMecánica : MonoBehaviour
 {
-
     public LineRendererScript lrs;
     public LineRenderer lr;
     public float maxDistance = 2f; // Distancia máxima para colgarse
@@ -16,6 +15,8 @@ public class ArañaMecánica : MonoBehaviour
 
     private bool isHanging = false;
     private bool isFalling = false;
+    private bool isScriptActive = true; // Estado actual del script ArañaMecánica
+
     private Rigidbody2D rb;
     private DistanceJoint2D distanceJoint;
     private Quaternion initialRotation;
@@ -98,6 +99,18 @@ public class ArañaMecánica : MonoBehaviour
         distanceJoint.enabled = false;
         lr.enabled = false;
         transform.rotation = initialRotation;
+
+        if (isScriptActive)
+        {
+            isScriptActive = false;
+            Invoke("ActivateScript", 2f); // Tiempo después de desactivar el script para reactivarlo (3 segundos en este ejemplo)
+        }
+    }
+
+    private void ActivateScript()
+    {
+        isScriptActive = true;
+        // Lógica adicional para activar el script ArañaMecánica
     }
 
     private void ReduceTime()

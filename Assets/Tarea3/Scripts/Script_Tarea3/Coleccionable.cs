@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Coleccionable : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class Coleccionable : MonoBehaviour
     public AudioClip sonidoRecoleccion;  // Sonido al recolectar el coleccionable
     public AudioSource audioSource;  // Referencia al componente AudioSource para reproducir el sonido
 
+    public KeyCode teclaGastarColeccionable; // Tecla para gastar coleccionables
+    public PlayerVida playerVida; // Referencia al script PlayerVida para manipular la vida del jugador
+
     private void Start()
     {
         if (contadorText == null || scoreText == null)
@@ -20,8 +24,20 @@ public class Coleccionable : MonoBehaviour
         }
         else
         {
+            SceneManager.sceneLoaded += ReiniciarPuntos;  // Suscribirse al evento de carga de escena para reiniciar los puntos en MenúPrincipal
+
+            puntos = PlayerPrefs.GetInt("Puntos", 0);  // Obtener el valor del score guardado en PlayerPrefs
             ActualizarContadorUI();
             ActualizarScoreUI();
+        }
+    }
+
+    private void ReiniciarPuntos(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MenúPrincipal")
+        {
+            puntos = 0;  // Reiniciar los puntos a cero
+            ActualizarContadorUI();
         }
     }
 
@@ -32,6 +48,7 @@ public class Coleccionable : MonoBehaviour
             recolectado = true;  // Marcamos el coleccionable como recolectado
             puntos++;
             ActualizarContadorUI();
+            ActualizarScoreUI();
             ReproducirSonidoRecoleccion();
             Destroy(gameObject);
         }
@@ -50,8 +67,9 @@ public class Coleccionable : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = ObtenerScore().ToString();
-            Debug.Log("Score actualizado: " + ObtenerScore());
+            int score = ObtenerScore();
+            scoreText.text = score.ToString();
+            Debug.Log("Score actualizado: " + score);
         }
     }
 
@@ -67,5 +85,24 @@ public class Coleccionable : MonoBehaviour
     {
         // Cálculo del score adicional basado en la cantidad de coleccionables recolectados
         return puntos * 100;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetInt("Puntos", puntos);  // Guardar el valor del score en PlayerPrefs al destruir el objeto
+        PlayerPrefs.Save();  // Guardar los cambios en PlayerPrefs
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(teclaGastarColeccionable))
+        {
+            if (puntos > 0)
+            {
+                puntos--;
+                ActualizarContadorUI();
+                playerVida.SetVidaMaxima(); // Establecer la vida del jugador en su valor máximo
+            }
+        }
     }
 }

@@ -459,7 +459,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.032132566, y: -0.1377086}
+  m_Offset: {x: -0.020499706, y: 0.58824325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -470,7 +470,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7265178, y: 0.7245828}
+  m_Size: {x: 1.9151046, y: 2.176486}
   m_EdgeRadius: 0
 --- !u!50 &6981200473286207865
 Rigidbody2D:
@@ -512,4 +512,17 @@ MonoBehaviour:
   audioSource: {fileID: 668612217161921218}
   typeSound: {fileID: 8300000, guid: 9c64f437cbea7434292280450e9deea2, type: 3}
   llave: {fileID: 0}
-  dialogueGroups: []
+  dialogueGroups:
+  - dialogueLines:
+    - It seems that you can't continue your path.
+    - You should be careful walking around these areas.
+    - The acid that falls here is quite dangerous.
+    - Take this.
+  - dialogueLines:
+    - Scape or die.
+    - Choose you destiny.
+  - dialogueLines:
+    - Now what?
+    - ...
+  - dialogueLines:
+    - ...

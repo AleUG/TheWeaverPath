@@ -3,19 +3,20 @@ using UnityEngine.UI;
 
 public class MenuFinal : MonoBehaviour
 {
-    public Text scoreActualText;  // Referencia al componente de texto para mostrar el score actual
+    public Text scoreText;  // Referencia al componente de texto para mostrar el score final obtenido por el jugador
 
     private void Start()
     {
-        int scoreActual = Coleccionable.puntos;  // Obtener el score actual de la partida desde Coleccionable
-        scoreActualText.text = scoreActual.ToString();  // Mostrar el score actual en el componente de texto
+        Coleccionable coleccionable = FindObjectOfType<Coleccionable>();  // Encontrar la instancia de Coleccionable en la escena
+        int score = coleccionable.ObtenerScore();  // Obtener el score del script Coleccionable
+        scoreText.text = score.ToString();  // Mostrar el score en el componente de texto
 
-        // Guardar el score actual como score total si es mayor al score almacenado previamente
-        int scoreTotal = PlayerPrefs.GetInt("ScoreTotal", 0);
-        if (scoreActual > scoreTotal)
+        int maxScore = PlayerPrefs.GetInt("MaxScore", 0);  // Obtener el score máximo guardado en PlayerPrefs
+        if (score > maxScore)
         {
-            PlayerPrefs.SetInt("ScoreTotal", scoreActual);
-            PlayerPrefs.Save();
+            maxScore = score;  // Si el score obtenido es mayor, actualizar el score máximo
+            PlayerPrefs.SetInt("MaxScore", maxScore);  // Guardar el nuevo score máximo en PlayerPrefs
+            PlayerPrefs.Save();  // Guardar los cambios en PlayerPrefs
         }
     }
 }

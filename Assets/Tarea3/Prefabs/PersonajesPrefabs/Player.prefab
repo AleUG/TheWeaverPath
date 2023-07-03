@@ -144,7 +144,6 @@ GameObject:
   - component: {fileID: 654763419017554428}
   - component: {fileID: 4910829780343395686}
   - component: {fileID: 4808663278288294747}
-  - component: {fileID: 7066486329928007864}
   - component: {fileID: 5311815008174166760}
   - component: {fileID: 4903676952866052859}
   - component: {fileID: 5621470136077754390}
@@ -345,10 +344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 931f9640fc7c6a84e9d41569fcf57f93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coleccionablesRequeridos: 10
-  portal: {fileID: 0}
-  mensajePortal: {fileID: 0}
-  duracionMensaje: 3
 --- !u!114 &4910829780343395686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,21 +386,10 @@ MonoBehaviour:
   capaTechos:
     serializedVersion: 2
     m_Bits: 64
+  esperandoRecarga: 0
+  tiempoEsperaRecarga: 2
   duracionTotal: 5
   barraDeTiempo: {fileID: 0}
---- !u!114 &7066486329928007864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654763419017554405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec47251be895d14daff7afcb4bd6d59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnButton: {fileID: 0}
 --- !u!232 &5311815008174166760
 DistanceJoint2D:
   m_ObjectHideFlags: 0
