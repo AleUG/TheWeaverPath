@@ -151,6 +151,7 @@ MonoBehaviour:
   contadorText: {fileID: 0}
   scoreText: {fileID: 0}
   sonidoRecoleccion: {fileID: 8300000, guid: a0a55b8c95af51a4ebe926886cce249e, type: 3}
+  sonidoGastoColeccionable: {fileID: 8300000, guid: b3553154081dcc34fbe73b873007730e, type: 3}
   audioSource: {fileID: 0}
   teclaGastarColeccionable: 102
   playerVida: {fileID: 0}

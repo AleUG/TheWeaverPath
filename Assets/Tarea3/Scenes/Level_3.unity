@@ -1113,7 +1113,7 @@ Transform:
   - {fileID: 1878959054}
   - {fileID: 601402441}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178852002
 GameObject:
@@ -1254,7 +1254,7 @@ RectTransform:
   m_Children:
   - {fileID: 977282780}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1406,7 +1406,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &302684661
 GameObject:
@@ -2400,7 +2400,7 @@ Transform:
   - {fileID: 1517364486}
   - {fileID: 317370826}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &456326675 stripped
 MonoBehaviour:
@@ -2444,7 +2444,7 @@ Transform:
   - {fileID: 938261695}
   - {fileID: 1112494538}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -2686,6 +2686,79 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &525411419
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: playerVida
+      value: 
+      objectReference: {fileID: 1611391784}
+    - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2075124184}
+    - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: contadorText
+      value: 
+      objectReference: {fileID: 1279769908}
+    - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: sonidoGastoColeccionable
+      value: 
+      objectReference: {fileID: 8300000, guid: b3553154081dcc34fbe73b873007730e, type: 3}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -160.94601
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -146.63162
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1923497
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919027, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919031, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: m_Name
+      value: Coleccionable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
 --- !u!1 &550459030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,7 +3809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueLines.Array.data[0]
@@ -3796,7 +3869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.size
@@ -3816,17 +3889,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[0]
-      value: 'But you can''t leave this place
-
-        >:('
+      value: Unfortunately, you cannot escape...
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[1]
-      value: MuHaahAHahaahaha
+      value: :)
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[2]
-      value: 
+      value: :)
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[3]
@@ -3834,11 +3905,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.data[0]
-      value: MuHaahAHahaahaha
+      value: :)
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.data[1]
-      value: "Probablemente no me creer\xEDas."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.data[0]
@@ -3900,7 +3971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7356139407717024328, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 162.28
+      value: 151.6
       objectReference: {fileID: 0}
     - target: {fileID: 7356139407717024328, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4505,7 +4576,7 @@ Tilemap:
   - first: {x: 39, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 41
+      m_TileIndex: 39
       m_TileSpriteIndex: 44
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
@@ -4515,7 +4586,7 @@ Tilemap:
   - first: {x: 39, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 40
+      m_TileIndex: 38
       m_TileSpriteIndex: 43
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
@@ -4525,8 +4596,8 @@ Tilemap:
   - first: {x: 39, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 41
-      m_TileSpriteIndex: 44
+      m_TileIndex: 37
+      m_TileSpriteIndex: 40
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
       m_TileObjectToInstantiateIndex: 65535
@@ -4535,8 +4606,8 @@ Tilemap:
   - first: {x: 39, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 40
-      m_TileSpriteIndex: 43
+      m_TileIndex: 36
+      m_TileSpriteIndex: 39
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
       m_TileObjectToInstantiateIndex: 65535
@@ -4545,7 +4616,7 @@ Tilemap:
   - first: {x: 39, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 41
+      m_TileIndex: 39
       m_TileSpriteIndex: 44
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
@@ -4555,7 +4626,7 @@ Tilemap:
   - first: {x: 39, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 40
+      m_TileIndex: 38
       m_TileSpriteIndex: 43
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
@@ -4565,8 +4636,8 @@ Tilemap:
   - first: {x: 39, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 41
-      m_TileSpriteIndex: 44
+      m_TileIndex: 37
+      m_TileSpriteIndex: 40
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
       m_TileObjectToInstantiateIndex: 65535
@@ -4575,8 +4646,8 @@ Tilemap:
   - first: {x: 39, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 40
-      m_TileSpriteIndex: 43
+      m_TileIndex: 36
+      m_TileSpriteIndex: 39
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
       m_TileObjectToInstantiateIndex: 65535
@@ -4585,7 +4656,7 @@ Tilemap:
   - first: {x: 39, y: 5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 41
+      m_TileIndex: 39
       m_TileSpriteIndex: 44
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
@@ -4595,7 +4666,7 @@ Tilemap:
   - first: {x: 39, y: 6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 40
+      m_TileIndex: 38
       m_TileSpriteIndex: 43
       m_TileMatrixIndex: 0
       m_TileColorIndex: 25
@@ -4676,18 +4747,18 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: 61ddde89dc1784c40ab2acbba3213afe, type: 2}
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: c841f38e8a578e64a87ed9020f128ac5, type: 2}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: d9b4a34e7b230c7408f7d674464e4af7, type: 2}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: 8f2b33c0361799d4286947ca2f0a766e, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 5
-    m_Data: {fileID: 11400000, guid: ecab64d4ae29a6b43bf279fe55428660, type: 2}
-  - m_RefCount: 5
-    m_Data: {fileID: 11400000, guid: fdd9358c7a00be842b28bff6a4c51046, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -4767,18 +4838,18 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 1105580909, guid: 18e53f02e23571c46b3254d6c863b970, type: 3}
+  - m_RefCount: 2
+    m_Data: {fileID: 2105647503, guid: 18e53f02e23571c46b3254d6c863b970, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 5
-    m_Data: {fileID: 183079934, guid: 8221253c576394e4983696b38c5aa8a5, type: 3}
-  - m_RefCount: 5
-    m_Data: {fileID: -1182050677, guid: 8221253c576394e4983696b38c5aa8a5, type: 3}
+  - m_RefCount: 3
+    m_Data: {fileID: -2024818009, guid: 18e53f02e23571c46b3254d6c863b970, type: 3}
+  - m_RefCount: 3
+    m_Data: {fileID: 1237528490, guid: 18e53f02e23571c46b3254d6c863b970, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 10
     m_Data:
@@ -4846,9 +4917,9 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {r: 3.9777e-41, g: 3.9777e-41, b: 3.9777e-41, a: 3.9777e-41}
   - m_RefCount: 0
-    m_Data: {r: 3.9777e-41, g: 3.9777e-41, b: 3.9777e-41, a: 3.9777e-41}
+    m_Data: {r: 1.39028e-40, g: 1.39028e-40, b: 1.39028e-40, a: 1.39028e-40}
   - m_RefCount: 0
-    m_Data: {r: 3.9777e-41, g: 3.9777e-41, b: 3.9777e-41, a: 3.9777e-41}
+    m_Data: {r: 1.39028e-40, g: 1.39028e-40, b: 1.39028e-40, a: 1.39028e-40}
   - m_RefCount: 10
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
@@ -5018,7 +5089,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807381160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 192.6, y: -11.99, z: 0}
+  m_LocalPosition: {x: 187.59, y: -11.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5462,7 +5533,7 @@ Transform:
   - {fileID: 2075124182}
   - {fileID: 1008129506}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &938261694
 GameObject:
@@ -6101,7 +6172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueLines.Array.data[0]
@@ -6161,7 +6232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.size
@@ -6197,11 +6268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.data[0]
-      value: Si te dijera el tiempo que estuve intentando pasar por esas sierras...
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.data[1]
-      value: "Probablemente no me creer\xEDas."
+      value: You did it...
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.data[0]
@@ -7085,6 +7156,17 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -50
+--- !u!114 &1279769908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7840965572698552139, guid: 02d1aa494c307ed45bc9d3553df915a1, type: 3}
+  m_PrefabInstance: {fileID: 1296555471}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1296555471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15600,7 +15682,7 @@ RectTransform:
   - {fileID: 62521558}
   - {fileID: 344434813}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17716,13 +17798,24 @@ Transform:
   - {fileID: 2071482564}
   - {fileID: 361205994}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1611391776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 654763419017554405, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
   m_PrefabInstance: {fileID: 654763418172059178}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1611391784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6746275340581188966, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+  m_PrefabInstance: {fileID: 654763418172059178}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611391776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f5233cc3384d742a5b4d6dd655ae91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1702247736
 GameObject:
   m_ObjectHideFlags: 0
@@ -17850,7 +17943,7 @@ Transform:
   - {fileID: 1274489862}
   - {fileID: 156379665}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1757328061
 GameObject:
@@ -19429,7 +19522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueLines.Array.data[0]
@@ -19489,7 +19582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.size
@@ -19509,11 +19602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[0]
-      value: Well done.
+      value: You have come far.
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[1]
-      value: :|
+      value: Well done.
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[0].dialogueLines.Array.data[2]
@@ -19525,11 +19618,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.data[0]
-      value: Si te dijera el tiempo que estuve intentando pasar por esas sierras...
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[1].dialogueLines.Array.data[1]
-      value: "Probablemente no me creer\xEDas."
+      value: Well done.
       objectReference: {fileID: 0}
     - target: {fileID: 2288192920857529117, guid: 1598a39fb09c2da4b9da18b172afca47, type: 3}
       propertyPath: dialogueGroups.Array.data[2].dialogueLines.Array.data[0]
@@ -20283,7 +20376,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2119541632 stripped
 MonoBehaviour:
@@ -20707,7 +20800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654763419017554430, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 654763419017554430, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
       propertyPath: m_LocalPosition.x

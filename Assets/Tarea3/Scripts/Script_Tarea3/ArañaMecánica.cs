@@ -34,7 +34,10 @@ public class ArañaMecánica : MonoBehaviour
         {
             if (!isHanging)
             {
-                TryHang();
+                if (isScriptActive)
+                {
+                    TryHang();
+                }
             }
             else
             {
@@ -56,9 +59,9 @@ public class ArañaMecánica : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isHanging && isFalling)
+        if (isHanging)
         {
-            rb.gravityScale = 5f;
+            rb.gravityScale = 3.5f;
         }
         else
         {
@@ -103,15 +106,15 @@ public class ArañaMecánica : MonoBehaviour
         if (isScriptActive)
         {
             isScriptActive = false;
-            Invoke("ActivateScript", 2f); // Tiempo después de desactivar el script para reactivarlo (3 segundos en este ejemplo)
+            Invoke("ActivateScript", 0.3f); // Tiempo de espera antes de reactivar el script (1 segundo en este ejemplo)
         }
     }
 
     private void ActivateScript()
     {
         isScriptActive = true;
-        // Lógica adicional para activar el script ArañaMecánica
     }
+
 
     private void ReduceTime()
     {

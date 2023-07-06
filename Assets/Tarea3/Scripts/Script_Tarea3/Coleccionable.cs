@@ -11,7 +11,8 @@ public class Coleccionable : MonoBehaviour
     public Text scoreText;  // Referencia al componente de texto para mostrar el score adicional
 
     public AudioClip sonidoRecoleccion;  // Sonido al recolectar el coleccionable
-    public AudioSource audioSource;  // Referencia al componente AudioSource para reproducir el sonido
+    public AudioClip sonidoGastoColeccionable;  // Sonido al gastar un coleccionable
+    public AudioSource audioSource;  // Referencia al componente AudioSource para reproducir los sonidos
 
     public KeyCode teclaGastarColeccionable; // Tecla para gastar coleccionables
     public PlayerVida playerVida; // Referencia al script PlayerVida para manipular la vida del jugador
@@ -81,6 +82,14 @@ public class Coleccionable : MonoBehaviour
         }
     }
 
+    private void ReproducirSonidoGastoColeccionable()
+    {
+        if (audioSource != null && sonidoGastoColeccionable != null)
+        {
+            audioSource.PlayOneShot(sonidoGastoColeccionable);
+        }
+    }
+
     public int ObtenerScore()
     {
         // Cálculo del score adicional basado en la cantidad de coleccionables recolectados
@@ -102,6 +111,7 @@ public class Coleccionable : MonoBehaviour
                 puntos--;
                 ActualizarContadorUI();
                 playerVida.SetVidaMaxima(); // Establecer la vida del jugador en su valor máximo
+                ReproducirSonidoGastoColeccionable(); // Reproducir el sonido de gasto de coleccionable
             }
         }
     }

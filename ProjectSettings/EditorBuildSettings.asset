@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: "Assets/Tarea3/Scenes/Men\xFAPrincipal.unity"
     guid: 73f3bd9de37203447945ca3023cc190b
   - enabled: 1
+    path: "Assets/Tarea3/Scenes/Cinem\xE1ticaStart.unity"
+    guid: b8d2926e99d7e204ca8d24e94b65896d
+  - enabled: 1
     path: Assets/Tarea3/Scenes/TUTORIAL.unity
     guid: d7802dad6c75ffc4c8d8d479b11c3c45
   - enabled: 1

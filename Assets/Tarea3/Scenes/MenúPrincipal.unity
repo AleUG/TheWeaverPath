@@ -133,7 +133,11 @@ PrefabInstance:
     - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 1956743118}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1638589855}
     - target: {fileID: 5431786380435919026, guid: 91b00d75f1d89694fb44ab5c25cf79f5, type: 3}
       propertyPath: puntajeText
       value: 
@@ -1233,7 +1237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombresEscenas:
-  - TUTORIAL
+  - "Cinem\xE1ticaStart"
   botonesCambiarEscena:
   - {fileID: 674144772}
   animacionFinal: {fileID: 7400000, guid: 359c6ce24b46eae47b831bafab47cd84, type: 2}
@@ -1273,7 +1277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 1466.4, y: 470}
+  m_AnchoredPosition: {x: 1466.4, y: 465.3}
   m_SizeDelta: {x: 520.4, y: 183.753}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!95 &1480009884
@@ -2672,7 +2676,7 @@ RectTransform:
   m_GameObject: {fileID: 1956743115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3283974, y: 0.3283974, z: 0.3283974}
+  m_LocalScale: {x: 0.23551346, y: 0.23551346, z: 0.23551346}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1017036103}
@@ -2680,7 +2684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 865, y: 467}
+  m_AnchoredPosition: {x: 865, y: 464}
   m_SizeDelta: {x: 160, y: 232.086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1956743118
@@ -2705,7 +2709,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 127b116f7da93ab499449340e44d0c95, type: 3}
-    m_FontSize: 250
+    m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
@@ -2916,7 +2920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2087876745193837208, guid: 7b9a064c30ab9e3408ee3bb3b5d38646, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -13.942993
+      value: -13.943054
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b9a064c30ab9e3408ee3bb3b5d38646, type: 3}

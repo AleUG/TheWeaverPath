@@ -133,7 +133,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 960
+        y: 1600
         width: 320
         height: 320
       alignment: 0
@@ -154,7 +154,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 960
+        y: 1600
         width: 320
         height: 320
       alignment: 0
@@ -175,7 +175,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 960
+        y: 1600
         width: 320
         height: 320
       alignment: 0
@@ -195,8 +195,8 @@ TextureImporter:
       name: SpiderSpriteAri_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 640
+        x: 960
+        y: 1600
         width: 320
         height: 320
       alignment: 0
@@ -216,8 +216,8 @@ TextureImporter:
       name: SpiderSpriteAri_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 640
+        x: 1280
+        y: 1600
         width: 320
         height: 320
       alignment: 0
@@ -237,8 +237,8 @@ TextureImporter:
       name: SpiderSpriteAri_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 640
+        x: 0
+        y: 1280
         width: 320
         height: 320
       alignment: 0
@@ -258,8 +258,8 @@ TextureImporter:
       name: SpiderSpriteAri_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
+        x: 320
+        y: 1280
         width: 320
         height: 320
       alignment: 0
@@ -279,8 +279,8 @@ TextureImporter:
       name: SpiderSpriteAri_7
       rect:
         serializedVersion: 2
-        x: 320
-        y: 320
+        x: 640
+        y: 1280
         width: 320
         height: 320
       alignment: 0
@@ -300,8 +300,8 @@ TextureImporter:
       name: SpiderSpriteAri_8
       rect:
         serializedVersion: 2
-        x: 640
-        y: 320
+        x: 960
+        y: 1280
         width: 320
         height: 320
       alignment: 0
@@ -321,8 +321,8 @@ TextureImporter:
       name: SpiderSpriteAri_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1280
+        y: 1280
         width: 320
         height: 320
       alignment: 0
@@ -342,8 +342,8 @@ TextureImporter:
       name: SpiderSpriteAri_10
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
+        x: 0
+        y: 960
         width: 320
         height: 320
       alignment: 0
@@ -355,6 +355,405 @@ TextureImporter:
       bones: []
       spriteID: a1f81f087760cdd4391d25d827277828
       internalID: 2114362424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump0
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b7865e036e5154cb8ed3ba5096a3d9
+      internalID: 1287374825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abed39d79154c24bbffcffd0c50e550
+      internalID: -1401044282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbba980b76caeb4f86f533cbfec0603
+      internalID: -338359622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0c72dbc04880f43a6ff93f61990a0f
+      internalID: 1052564421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8466e4299599814c88cf9a9cc1f8738
+      internalID: 1824967336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa1d1ca91279e945874f6d0221a77c8
+      internalID: 724321287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb250166c4cd5434a8d957a957e3bdb2
+      internalID: 1800254799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump7
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b1a081c4e947342af0c078982c7238
+      internalID: -1645671608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b4697099815904e921abf94a891f5e
+      internalID: -859666961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f98db7bdb028d84cbcd6c23a10f53ba
+      internalID: 1416473073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a7f88121c277a46bbbdfcdd6412b74
+      internalID: -2050817174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c53b9088c426047ae7babc0bd6a7af
+      internalID: -147685902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feff943b6a438e443918cf7f2d931cec
+      internalID: -147217925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_jump13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124d5b3b1380d784abc453321a438483
+      internalID: 696303999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_walk0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cfd60fbdae2e84990f8b4549df4a2b
+      internalID: -1697169746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_walk1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc676d0f8e590347b889d0599d6d573
+      internalID: 1476931291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_walk2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec71e43823deb544950ebeb496cae21
+      internalID: 1222973471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_walk3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1929976e56fef3c4eac7fc594c743a92
+      internalID: -1336127302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderSpriteAri_walk4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d074d32deda8c54997a2a84b6cf74a3
+      internalID: -506371456
       vertices: []
       indices: 
       edges: []
@@ -372,14 +771,33 @@ TextureImporter:
     nameFileIdTable:
       SpiderSpriteAri_9: 1812379760
       SpiderSpriteAri_8: -1161755343
+      SpiderSpriteAri_jump3: 1052564421
+      SpiderSpriteAri_jump4: 1824967336
       SpiderSpriteAri_5: -974381582
+      SpiderSpriteAri_walk3: -1336127302
+      SpiderSpriteAri_jump7: -1645671608
       SpiderSpriteAri_10: 2114362424
+      SpiderSpriteAri_jump8: -859666961
       SpiderSpriteAri_6: 1743954426
+      SpiderSpriteAri_walk4: -506371456
+      SpiderSpriteAri_jump6: 1800254799
+      SpiderSpriteAri_walk1: 1476931291
       SpiderSpriteAri_0: -1845212327
+      SpiderSpriteAri_jump2: -338359622
+      SpiderSpriteAri_jump0: 1287374825
+      SpiderSpriteAri_jump11: -147685902
+      SpiderSpriteAri_jump9: 1416473073
       SpiderSpriteAri_3: -499250779
       SpiderSpriteAri_2: -1853741541
       SpiderSpriteAri_4: -69669638
+      SpiderSpriteAri_jump13: 696303999
+      SpiderSpriteAri_jump10: -2050817174
+      SpiderSpriteAri_jump12: -147217925
+      SpiderSpriteAri_walk0: -1697169746
+      SpiderSpriteAri_jump5: 724321287
+      SpiderSpriteAri_jump1: -1401044282
       SpiderSpriteAri_7: -1117684781
+      SpiderSpriteAri_walk2: 1222973471
       SpiderSpriteAri_1: 1816346046
   spritePackingTag: 
   pSDRemoveMatte: 0

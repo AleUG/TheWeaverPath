@@ -21,6 +21,8 @@ public class EscaladorDeParedYTecho : MonoBehaviour
     public float duracionTotal = 50f;
     public Image barraDeTiempo;
 
+    private Animator animator;
+
     private ArañaMecánica arañaMecánica;
 
     private void Start()
@@ -30,6 +32,7 @@ public class EscaladorDeParedYTecho : MonoBehaviour
         rotacionInicial = transform.rotation;
         barraDeTiempo = GameObject.Find("TimeBar").GetComponent<Image>();
         arañaMecánica = GetComponent<ArañaMecánica>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -38,6 +41,14 @@ public class EscaladorDeParedYTecho : MonoBehaviour
 
         float fillAmount = arañaMecánica.CurrentTime() / duracionTotal;
         barraDeTiempo.fillAmount = fillAmount;
+
+        // Actualizar la animación "Run"
+
+        // Detener la animación de salto si el personaje está trepando o escalando
+        if (escalandoPared || puedeTreparTecho)
+        {
+            animator.SetBool("Jump", false);
+        }
     }
 
     private void FixedUpdate()
@@ -121,11 +132,14 @@ public class EscaladorDeParedYTecho : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             spriteRenderer.flipX = false;
+            animator.SetBool("Run", Mathf.Abs(movimientoVertical) > 0.1f);
+
         }
         else if (movimientoVertical < 0f)
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             spriteRenderer.flipX = true;
+            animator.SetBool("Run", Mathf.Abs(movimientoVertical) > 0.1f);
         }
 
         if (arañaMecánica.CurrentTime() <= 0f)
@@ -159,11 +173,13 @@ public class EscaladorDeParedYTecho : MonoBehaviour
             rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             transform.rotation = Quaternion.Euler(-1f, 0f, 180f);
             spriteRenderer.flipX = true;
+            animator.SetBool("Run", Mathf.Abs(movimientoHorizontal) > 0); // Activa el bool "Run" en el Animator si hay movimiento horizontal
         }
         else if (movimientoHorizontal < 0f)
         {
             rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             transform.rotation = Quaternion.Euler(1f, 0f, 180f);
+            animator.SetBool("Run", Mathf.Abs(movimientoHorizontal) > 0); // Activa el bool "Run" en el Animator si hay movimiento horizontal
         }
         else
         {

@@ -35,7 +35,7 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); // Obtiene la referencia al Rigidbody2D del jugador
         spriteRenderer = GetComponent<SpriteRenderer>(); // Obtiene la referencia al SpriteRenderer del jugador
 
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -47,7 +47,7 @@ public class PlayerMove : MonoBehaviour
 
         float horizontalMovement = Input.GetAxis("Horizontal"); // Obtiene el movimiento horizontal del jugador
 
-        //animator.SetFloat("Horizontal", Mathf.Abs(horizontalMovement));
+        animator.SetBool("Run", Mathf.Abs(horizontalMovement) > 0); // Activa el bool "Run" en el Animator si hay movimiento horizontal
 
         rb.velocity = new Vector2(horizontalMovement * speed, rb.velocity.y); // Aplica el movimiento horizontal al jugador
 
@@ -72,10 +72,10 @@ public class PlayerMove : MonoBehaviour
         if (canJump && Input.GetKeyDown(key) || canSecondJump && hasSecondJump && Input.GetKeyDown(key))
         {
             // Apply an instantaneous upwards force
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpStrength, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpStrength, ForceMode2D.Impulse);
 
             // Trigger the jump animation
-            //animator.SetTrigger("Jump");
+            animator.SetBool("Jump", true);
 
             if (!canJump)
             {
@@ -96,6 +96,7 @@ public class PlayerMove : MonoBehaviour
         {
             canJump = true;
             canSecondJump = false;
+            animator.SetBool("Jump", false);
         }
     }
 }

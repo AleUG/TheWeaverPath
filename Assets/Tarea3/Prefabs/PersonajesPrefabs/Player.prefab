@@ -218,7 +218,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -262,7 +262,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4, y: 4}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
   damageAudioSource: {fileID: 0}
   reboteForce: 12
   invulnerabilityDuration: 1
-  blinkInterval: 0.1
+  blinkInterval: 0.15
 --- !u!114 &654763419017554428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,8 +386,6 @@ MonoBehaviour:
   capaTechos:
     serializedVersion: 2
     m_Bits: 64
-  esperandoRecarga: 0
-  tiempoEsperaRecarga: 2
   duracionTotal: 5
   barraDeTiempo: {fileID: 0}
 --- !u!232 &5311815008174166760
