@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntoSeguimiento: {fileID: 0}
-  velocidadSeguimiento: 10
+  velocidadSeguimiento: 11
   llaveAgarrada: 0
   puertaAsociada: {fileID: 0}
   sonidoLlave: {fileID: 1690682472730231087}
