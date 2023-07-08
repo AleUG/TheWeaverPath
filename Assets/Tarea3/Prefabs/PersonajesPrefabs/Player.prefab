@@ -141,8 +141,8 @@ GameObject:
   - component: {fileID: 654763419017554427}
   - component: {fileID: 654763419017554431}
   - component: {fileID: 6746275340581188966}
-  - component: {fileID: 654763419017554428}
   - component: {fileID: 4910829780343395686}
+  - component: {fileID: 1351196965016298228}
   - component: {fileID: 4808663278288294747}
   - component: {fileID: 5311815008174166760}
   - component: {fileID: 4903676952866052859}
@@ -332,18 +332,6 @@ MonoBehaviour:
   reboteForce: 12
   invulnerabilityDuration: 1
   blinkInterval: 0.15
---- !u!114 &654763419017554428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654763419017554405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 931f9640fc7c6a84e9d41569fcf57f93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4910829780343395686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,6 +353,24 @@ MonoBehaviour:
   hangPoint: {fileID: 0}
   duracionTotal: 5
   barraDeTiempo: {fileID: 0}
+--- !u!114 &1351196965016298228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654763419017554405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3f1d9a8cdbbd542a2b600dcf5a75e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contadorText: {fileID: 0}
+  scoreText: {fileID: 0}
+  teclaGastarColeccionable: 102
+  playerVida: {fileID: 6746275340581188966}
+  sonidoGastoColeccionable: {fileID: 8300000, guid: b3553154081dcc34fbe73b873007730e, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &4808663278288294747
 MonoBehaviour:
   m_ObjectHideFlags: 0

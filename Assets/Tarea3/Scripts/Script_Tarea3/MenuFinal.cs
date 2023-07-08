@@ -7,7 +7,7 @@ public class MenuFinal : MonoBehaviour
 
     private void Start()
     {
-        Coleccionable coleccionable = FindObjectOfType<Coleccionable>();  // Encontrar la instancia de Coleccionable en la escena
+        PuntosManager coleccionable = FindObjectOfType<PuntosManager>();  // Encontrar la instancia de Coleccionable en la escena
         int score = coleccionable.ObtenerScore();  // Obtener el score del script Coleccionable
         scoreText.text = score.ToString();  // Mostrar el score en el componente de texto
 

@@ -70773,6 +70773,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1351196965016298228, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+      propertyPath: playerVida
+      value: 
+      objectReference: {fileID: 1611391785}
+    - target: {fileID: 1351196965016298228, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2075124184}
+    - target: {fileID: 1351196965016298228, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+      propertyPath: contadorText
+      value: 
+      objectReference: {fileID: 1296555474}
+    - target: {fileID: 1351196965016298228, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+      propertyPath: sonidoGastoColeccionable
+      value: 
+      objectReference: {fileID: 8300000, guid: b3553154081dcc34fbe73b873007730e, type: 3}
+    - target: {fileID: 1351196965016298228, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+      propertyPath: teclaGastarColeccionable
+      value: 102
+      objectReference: {fileID: 0}
     - target: {fileID: 4808663278288294747, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
       propertyPath: barraDeTiempo
       value: 

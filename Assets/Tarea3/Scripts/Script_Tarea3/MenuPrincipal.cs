@@ -16,11 +16,11 @@ public class MenuPrincipal : MonoBehaviour
 
         if (coleccionable != null)
         {
-            Coleccionable coleccionableScript = coleccionable.GetComponent<Coleccionable>();  // Obtener el componente Coleccionable
+            PuntosManager puntosManager = coleccionable.GetComponent<PuntosManager>();  // Obtener el componente Coleccionable
 
-            if (coleccionableScript != null)
+            if (puntosManager != null)
             {
-                scoreActual = coleccionableScript.ObtenerScore();  // Obtener el puntaje actual del jugador
+                scoreActual = puntosManager.ObtenerScore();  // Obtener el puntaje actual del jugador
 
                 if (scoreActual > maxScore)
                 {
