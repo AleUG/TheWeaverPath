@@ -12,14 +12,14 @@ public class LineRendererScript : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
 
         // Establecer los puntos iniciales del LineRenderer
-        lineRenderer.SetPosition(0, puntoA.position);
-        lineRenderer.SetPosition(1, puntoB.position);
+        lineRenderer.SetPosition(0, new Vector3(puntoA.position.x, puntoA.position.y, 0f));
+        lineRenderer.SetPosition(1, new Vector3(puntoB.position.x, puntoB.position.y, 0f));
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         // Actualizar los puntos del LineRenderer si los puntos A y B cambian
-        lineRenderer.SetPosition(0, puntoA.position);
-        lineRenderer.SetPosition(1, puntoB.position);
+        lineRenderer.SetPosition(0, new Vector3(puntoA.position.x, puntoA.position.y, 0f));
+        lineRenderer.SetPosition(1, new Vector3(puntoB.position.x, puntoB.position.y, 0f));
     }
 }

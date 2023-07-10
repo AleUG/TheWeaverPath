@@ -49,7 +49,8 @@ public class PlayerMove : MonoBehaviour
 
         float horizontalMovement = Input.GetAxis("Horizontal"); // Obtiene el movimiento horizontal del jugador
 
-        if (! escalador.IsClimbing()) { 
+        if (!escalador.IsClimbing()) 
+        { 
             animator.SetBool("Run", Mathf.Abs(horizontalMovement) > 0); // Activa el bool "Run" en el Animator si hay movimiento horizontal
         }
 
