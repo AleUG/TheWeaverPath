@@ -63983,7 +63983,7 @@ Tilemap:
       - {fileID: 194466423, guid: dbb41c70678527848979ced01720e688, type: 3}
       - {fileID: -759818452, guid: dbb41c70678527848979ced01720e688, type: 3}
       - {fileID: -2040721471, guid: dbb41c70678527848979ced01720e688, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -65738,6 +65738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetosDesactivar:
   - {fileID: 1087031674}
+  - {fileID: 1369217052}
   objetosActivar: []
   gameplayMusicSource: {fileID: 0}
   canvasActive: 0

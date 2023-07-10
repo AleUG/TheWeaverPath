@@ -477,6 +477,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1351196965016298228, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351196965016298228, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1986151541}
@@ -488,6 +492,10 @@ PrefabInstance:
       propertyPath: contadorText
       value: 
       objectReference: {fileID: 359270213}
+    - target: {fileID: 1351196965016298228, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
+      propertyPath: teclaGastarColeccionable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4808663278288294747, guid: e2795c46123f11e4caa103bac3d97967, type: 3}
       propertyPath: m_Enabled
       value: 0

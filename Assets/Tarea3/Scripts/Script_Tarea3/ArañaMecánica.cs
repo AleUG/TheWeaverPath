@@ -14,7 +14,7 @@ public class ArañaMecánica : MonoBehaviour
     public Image barraDeTiempo; // Barra de tiempo para mostrar visualmente
 
     private bool isHanging = false;
-    private bool isFalling = false;
+    //private bool isFalling = false;
     private bool isScriptActive = true; // Estado actual del script ArañaMecánica
 
     private Rigidbody2D rb;
@@ -85,7 +85,7 @@ public class ArañaMecánica : MonoBehaviour
     private void HangOnCeiling(Vector2 hangPosition)
     {
         isHanging = true;
-        isFalling = false;
+        //isFalling = false;
         rb.velocity = Vector2.zero;
 
         distanceJoint.enabled = true;
