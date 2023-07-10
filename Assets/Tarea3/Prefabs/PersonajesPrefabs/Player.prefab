@@ -310,6 +310,7 @@ MonoBehaviour:
   checkGround: 1
   canJump: 1
   hasSecondJump: 0
+  escalador: {fileID: 4808663278288294747}
 --- !u!114 &6746275340581188966
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -128,6 +128,8 @@ public class EscaladorDeParedYTecho : MonoBehaviour
         Vector2 movimiento = new Vector2(0f, movimientoVertical * velocidadEscalada * Time.fixedDeltaTime);
         rb.MovePosition(rb.position + movimiento);
 
+        //Debug.Log(movimientoVertical);
+
         if (movimientoVertical > 0f)
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -265,5 +267,10 @@ public class EscaladorDeParedYTecho : MonoBehaviour
         {
             puedeTreparTecho = false;
         }
+    }
+
+    public bool IsClimbing()
+    {
+        return puedeEscalarPared && clickDerechoPresionado;
     }
 }

@@ -1149,9 +1149,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombresEscenas:
-  - Level_2
+  - Level_3
   - "Men\xFAPrincipal"
-  - Level_2
+  - Level_3
   - "Men\xFAPrincipal"
   botonesCambiarEscena:
   - {fileID: 1296555473}
@@ -7178,6 +7178,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6332301417577526084, guid: 02d1aa494c307ed45bc9d3553df915a1, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7123111554959513824, guid: 02d1aa494c307ed45bc9d3553df915a1, type: 3}
       propertyPath: player
       value: 
@@ -7278,6 +7282,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7840965573554474807, guid: 02d1aa494c307ed45bc9d3553df915a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7840965573834914161, guid: 02d1aa494c307ed45bc9d3553df915a1, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -7297,6 +7305,10 @@ PrefabInstance:
     - target: {fileID: 8516248602328773539, guid: 02d1aa494c307ed45bc9d3553df915a1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516248602395191219, guid: 02d1aa494c307ed45bc9d3553df915a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516248602541255712, guid: 02d1aa494c307ed45bc9d3553df915a1, type: 3}
       propertyPath: m_AnchorMax.x

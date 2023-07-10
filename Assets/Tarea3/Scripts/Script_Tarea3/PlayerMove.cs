@@ -30,6 +30,8 @@ public class PlayerMove : MonoBehaviour
     public bool hasSecondJump = true;
     private bool canSecondJump = false;
 
+    [SerializeField] EscaladorDeParedYTecho escalador;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Obtiene la referencia al Rigidbody2D del jugador
@@ -47,7 +49,9 @@ public class PlayerMove : MonoBehaviour
 
         float horizontalMovement = Input.GetAxis("Horizontal"); // Obtiene el movimiento horizontal del jugador
 
-        animator.SetBool("Run", Mathf.Abs(horizontalMovement) > 0); // Activa el bool "Run" en el Animator si hay movimiento horizontal
+        if (! escalador.IsClimbing()) { 
+            animator.SetBool("Run", Mathf.Abs(horizontalMovement) > 0); // Activa el bool "Run" en el Animator si hay movimiento horizontal
+        }
 
         rb.velocity = new Vector2(horizontalMovement * speed, rb.velocity.y); // Aplica el movimiento horizontal al jugador
 
